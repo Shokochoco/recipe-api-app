@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="recipe_api_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="326"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="326"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNW-lb-5EN">
+                        <rect key="frame" x="0.0" y="0.0" width="219" height="261"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-92-Jo0">
+                        <rect key="frame" x="0.0" y="261" width="219" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="CVD-6K-X8Z"/>
+                            <constraint firstAttribute="width" constant="219" id="wSw-tE-iIs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bNW-lb-5EN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6hr-Kw-lw4"/>
+                <constraint firstAttribute="bottom" secondItem="VEw-92-Jo0" secondAttribute="bottom" id="BNi-xS-KQj"/>
+                <constraint firstItem="bNW-lb-5EN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IWu-lV-he0"/>
+                <constraint firstAttribute="trailing" secondItem="VEw-92-Jo0" secondAttribute="trailing" id="NAf-D1-YJu"/>
+                <constraint firstItem="VEw-92-Jo0" firstAttribute="top" secondItem="bNW-lb-5EN" secondAttribute="bottom" id="cY5-lx-Zi5"/>
+                <constraint firstItem="VEw-92-Jo0" firstAttribute="top" secondItem="bNW-lb-5EN" secondAttribute="bottom" id="elK-Uf-6mV"/>
+                <constraint firstItem="VEw-92-Jo0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kKS-Bo-r0e"/>
+                <constraint firstAttribute="trailing" secondItem="bNW-lb-5EN" secondAttribute="trailing" id="oxW-bP-77y"/>
+            </constraints>
+            <size key="customSize" width="219" height="326"/>
+            <connections>
+                <outlet property="recipeImg" destination="bNW-lb-5EN" id="NUW-f8-gbH"/>
+                <outlet property="recipeTitle" destination="VEw-92-Jo0" id="4jT-Q4-Gfn"/>
+            </connections>
+            <point key="canvasLocation" x="254.34782608695653" y="170.75892857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
